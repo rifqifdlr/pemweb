@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Form Registrasi Siswa</title>
+</head>
+<body>
+    <form action="form.html" method="POST">
+        <fieldset style="background-color: aqua;">
+        <legend align="center">Isi Data Diri Anda</legend>
+        <div>
+            <label>Nama Lengkap</label>
+            <div>
+                <input type="text" name="nama" value="" size="30">
+            </div>
+        <div>
+            <label>Email</label>
+            <div>
+                <input type="text" name="email" value="" size="30">
+            </div>
+        <div>
+            <label>Nomor Handphone</label>
+            <div>
+                <input type="text" name="nohp" value="" size="30">
+            </div>
+        <div>
+            <label>Password</label>
+            <div>
+                <input type="Password" name="Password" autocomplete="off" placeholder="Password" required>
+                <div class="help-block">Minimum of 10 characters</div>
+            </div>
+        <div>
+            <input type="Password" name="Password" autocomplete="off" placeholder="Confirm Password" data-match="Password" data-match-error="These don't match">
+        </div>
+        <div>
+            <label>Jenis Kelamin</label>
+            <div>
+            <input type="radio" name="jk" value="L checked /">Laki-laki
+            <input type="radio" name="jk" value="P" />Perempuan
+            </div>
+        </div>
+        </fieldset>
+        <div>
+            <input type="submit" value="Simpan" name="proses" />
+        </div>
+    </form>
+</body>
+</html>
