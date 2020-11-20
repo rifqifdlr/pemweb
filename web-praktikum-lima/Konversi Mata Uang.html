@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Mata Uang</title>
+    <script>
+        function menghitung_valas() {
+            let valas = document.getElementById("valas").value;
+            let nilai = document.getElementById("nilai").value;
+            document.getElementById("hasil").value = nilai * valas;
+        }
+    </script>
+    <style>
+        .bg {
+            background-image: url("biru.png")
+        }
+        .box {
+            background:#C0C0C0;
+            border-radius: 20px;
+            padding: 57px 70px 57px 65px;
+            margin: 100px auto;
+            max-width: 800px;
+            box-sizing:50px;
+        }
+
+        .legend {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: italic;
+            font-size: 40px;
+            padding: 20px;
+            line-height: 50%;
+            color: cornsilk;
+        }
+
+        .table {
+            text-align: center;
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+    </style>
+</head>
+
+<body class="bg">
+    <fieldset class="table">
+        <legend class="legend">
+            Konversi Mata Uang
+        </legend>
+        <center>
+            <table class="box">
+                <tr>
+                    <td>Masukan Nilai</td>
+                    <td>Mata uang</td>
+                    <td>Nilai Rupiah</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="nilai" id="nilai" onchange="menghitung_valas()"></td>
+                    <td>
+                        <select name="valas" id="valas" onchange="menghitung_valas()">
+                            <option value="9915">Dollar US</option>
+                            <option value="13472">Dollar Singapore</option>
+                            <option value="874">Ringgit Malaysia</option>
+                            <option value="128">Yen Jepang</option>
+                            <option value="15888">Euro</option>
+                            <option value="3592">Riyal Arab Saudi</option>
+                        </select>
+                    </td>
+                    <td><input type="text" name="hasil" id="hasil"></td>
+                </tr>
+            </table>
+        </center>
+    </fieldset>
+
+</body>
+
+</html>
